@@ -110,6 +110,7 @@ class script(object):
 • 🗑️ /delete - Delete files by query
 • 💥 /delete_all - Wipe indexed DB
 • 🌌 /set_video_cover - Set the photo to the video files
+• 🗑 /del_video_cover - To remove the video cover
 
 <b>📢 Broadcast & Groups</b>
 • 📢 /broadcast - PM broadcast

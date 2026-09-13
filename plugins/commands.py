@@ -477,6 +477,11 @@ async def set_video_cover(bot, message):
     await db.set_video_cover(response)
     await text.edit_text("🎉 Successfully set the video cover.")
 
+@Client.on_message(filters.command('del_video_cover') & filters.user(ADMINS))
+async def del_video_cover(bot, message):
+    await db.set_video_cover(None)
+    await message.reply('🗑 Successfully remove video cover')
+    
 
 @Client.on_message(filters.command('img_2_link'))
 async def img_2_link(bot, message):
